@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://miro.medium.com/v2/resize:fit:1400/1*Hm-G7dLwMZtLOPWbL6nkww.jpeg"
+    />
+  </head>
+  <body class="bg-gray-100 rounded-lg">
+    <header>
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1otOsetUJ7zHq1QBQo5oDjLIfZru8XubAQ&s"
+              class="mr-3 h-16 sm:h-9"
+              alt="Logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >My Portfolio</span
+            >
+          </a>
+          <div class="flex items-center lg:order-2">
+            <a
+              href="#"
+              class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+              >Get started</a
+            >
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#education"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact Meee</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-12">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center md:space-x-14 space-x-20"
+      >
+        <div class="md:w-1/2 px-8 mb-8 md:mb-0">
+          <h2 class="text-4xl font-bold text-indigo-900">
+            Hi, I Am Armaan Khan Tufail,
+          </h2>
+          <h3 class="text-2xl font-semibold text-orange-600">
+            Full Stack Developer
+          </h3>
+          <p class="mt-4 text-gray-600">
+            I am a dedicated software developer proficient in frontend and
+            backend development. Passionate about continuous learning, he enjoys
+            exploring new technologies and improving his skills. With a keen
+            interest in sports and self-improvement literature, Armaan brings a
+            well-rounded approach to his work and life.
+          </p>
+          <div class="mt-6">
+            <a
+              href="#projects"
+              class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
+              >See My Projects</a
+            >
+          </div>
+        </div>
+        <div class="md:w-1/2 w-full">
+          <img
+            src="./pro2.jpeg"
+            alt="Armaan Khan Tufail"
+            class="rounded-lg shadow-lg h-96"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 bg-gray-200">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-indigo-900 mb-8">
+          Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Programming Languages
+            </h3>
+            <p class="text-gray-600">C++, JavaScript, Python, Java</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Frontend Technologies
+            </h3>
+            <p class="text-gray-600">
+              HTML, CSS, React, Next.js, Git, Flutter, Tailwind, Bootstrap
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Backend Technologies
+            </h3>
+            <p class="text-gray-600">Node.js, Express.js, REST API</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Databases</h3>
+            <p class="text-gray-600">MongoDB, Firebase, MySQL</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Data Analytics</h3>
+            <p class="text-gray-600">Excel, Tableau, Machine Learning</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              App Technologies
+            </h3>
+            <p class="text-gray-600">Flutter,Dart</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">AIML</h3>
+            <p class="text-gray-600">
+              Statistics,Deep Learning, Nlp, Tensortflow, Keras, Pandas, Numpy,
+              Scikit-Learn
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-12 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-indigo-900 mb-8">
+          Education
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Bachelor's Degree
+            </h3>
+            <p class="text-gray-600">
+              Branch: Computer Science and Data Science
+            </p>
+            <p class="text-gray-600">CGPA: 7.5 | 2024</p>
+            <p class="text-gray-600">
+              Mumbai University - Saraswati College of Engineering, Kharghar
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">12th HSC</h3>
+            <p class="text-gray-600">Science (PCMB) 68.05% | 2020</p>
+            <p class="text-gray-600">
+              HSC - Maharashtra Board - Bk Patil Jr College
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">10th SSC</h3>
+            <p class="text-gray-600">84.80% | 2018</p>
+            <p class="text-gray-600">
+              SSC - Maharashtra Board - National Urdu High School
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12 bg-gray-200">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-indigo-900 mb-8">
+          Experience
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Web Developer — Freelancing
+            </h3>
+            <p class="text-gray-600">March 2023 – April 2023</p>
+            <p class="text-gray-600">
+              Made a Frontend Part of Website – HTML, CSS, JavaScript, Tailwind
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              React JS — Freelancing
+            </h3>
+            <p class="text-gray-600">April 2023 – May 2023</p>
+            <p class="text-gray-600">
+              Made a Weather Web-App Using React.js and Weather API and
+              Bootstrap
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              MERN — Freelancing
+            </h3>
+            <p class="text-gray-600">Nov 2023 – Dec 2023</p>
+            <p class="text-gray-600">
+              Made a Full Stack Project Carbon Emission – MongoDB, Express,
+              Node, React
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-8">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Projects</h2>
+        <div
+          id="projects-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Project cards will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div class="container mx-auto p-6">
+      <!-- <header class="mb-8">
+        <h1 class="text-3xl font-bold mb-2">John Doe</h1>
+        <p class="text-lg">Web Developer</p>
+        <p>Email: john@example.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>
+          Website:
+          <a href="http://www.example.com" class="text-blue-600 hover:underline"
+            >www.example.com</a
+          >
+        </p>
+      </header> -->
+
+      <h2 class="text-2xl font-semibold mb-4">Internships</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1otOsetUJ7zHq1QBQo5oDjLIfZru8XubAQ&s"
+            alt="Internship Title"
+            class="mb-4 rounded"
+          />
+          <h3 class="text-xl font-semibold mb-2">Mern Stack Development</h3>
+          <p class="text-gray-600 mb-2">Hawkscode | Jan 2024 - April 2024</p>
+          <p class="text-gray-600">
+            In this intership I have learn mern Stack from scratch.and also make
+            a project using react ,express, mongo db and node
+          </p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-semibold mb-4">Certifications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img
+            src="https://s.w.org/style/images/about/WordPress-logotype-alternative.png"
+            alt="Certification Title"
+            class="mb-4 rounded"
+          />
+          <h3 class="text-xl font-semibold mb-2">
+            Build A Free Website With WordPres
+          </h3>
+          <p class="text-gray-600 mb-2">Coursera | Jan 2024</p>
+          <p class="text-gray-600">
+            Building a free WordPress site teaches website setup, content
+            management, design, basic SEO, digital marketing, technical skills,
+            and project management.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section id="contact" class="py-12 bg-gray-200">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-indigo-900 mb-8">
+          Contact Me
+        </h2>
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
+          <form
+            action="mailto:karmankkhan@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto text-center">
+        <p class="mb-4">Follow me on:</p>
+        <div class="flex justify-center space-x-4 mb-4">
+          <a
+            href="https://github.com/armaankhan8270"
+            class="hover:text-gray-400"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/armaan-khan-434897226/"
+            class="hover:text-gray-400"
+            >LinkedIn</a
+          >
+        </div>
+        <p>&copy; 2024 Armaan Khan Tufail. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const projects = [
+        {
+          title: "Blog Website",
+          description:
+            "An user-friendly blog sharing website. Created dynamic blog platform enabling user search, creation, and sharing. Implemented user authentication, search, and social sharing features.",
+          frontend: "HTML, Tailwind, JavaScript, React.js",
+          backend: "Node.js, Express.js, REST API",
+          database: "MongoDB",
+          github: "https://github.com/armaankhan8270/BlogApp-Mern-",
+          image: "./blog4.png",
+        },
+        {
+          title: "Film Finder Website",
+          description:
+            "A movie recommendation system based on a machine learning model. Engineered a robust recommendation engine leveraging machine learning algorithms to analyze user preferences and suggest relevant movies. Implemented user-friendly features such as search functionality, personalized recommendations, and user rating system to enhance user experience.",
+          frontend: "Streamlit, Python",
+          machineLearning: "NumPy, Pandas, Scikit-Learn",
+          github: "https://github.com/armaankhan8270/MovieRecommendation-Nlp",
+          image: "./movie1.png",
+        },
+        {
+          title: "Portfolio Website",
+          description:
+            "Personal portfolio site showcasing projects and skills. Features: responsive design, project sections, contact info.",
+          techUsed: "React.js, Tailwind CSS",
+          github: "https://github.com/armaankhan8270/Portfolio",
+          image: "./portfolio.png",
+        },
+        {
+          title: "Hospital Management System",
+          description:
+            "Backend and frontend development, database integration, authentication implementation, testing.",
+          techUsed: "Node.js, Express.js, MongoDB, React.js, JSON Web Token",
+          github:
+            "https://github.com/armaankhan8270/hospital-management-system",
+          image: "./hospital1.png",
+        },
+        {
+          title: "Attendance Management System",
+          description:
+            "Web app for attendance tracking including features: authentication, record keeping, reporting.",
+          techUsed: "MERN stack (MongoDB, Express.js, React.js, Node.js)",
+          github: "https://github.com/armaankhan8270/AttandaceManeger",
+          image: "./attandance2.png",
+        },
+        {
+          title: "Todo Application",
+          description:
+            "Developed a todo application to help users organize tasks and manage their daily activities efficiently. Responsibilities: frontend and backend development, RESTful API design, database integration, user authentication, testing, and deployment.",
+          techUsed:
+            "Next.js, React.js, Node.js, Express.js, MongoDB, Tailwind CSS, JWT, Axios, Vercel",
+          github: "https://github.com/armaankhan8270/NextJsTodoApp",
+          image: "./dash5.png",
+        },
+        {
+          title: "Community Connect",
+          description:
+            "An app where we can manage community projects. Developed Community Connect, an innovative mobile application designed to streamline the management of community projects. Utilized Flutter and Dart programming languages to create a user-friendly interface with seamless navigation.",
+          frontend: "Flutter, Dart",
+          backend: "Firebase",
+          github: "https://github.com/armaankhan8270/community-connect",
+          image: "./Screenshot 2024-05-23 225329.png",
+        },
+        {
+          title: "Movie Dashboard",
+          description:
+            "Developed a movie dashboard utilizing Tableau for comprehensive data visualization and analysis.",
+          techUsed: "Tableau, Python",
+          github: "https://github.com/armaankhan8270/movie-dashboard",
+          image: "./Screenshot 2024-05-25 121938.png",
+        },
+        {
+          title: "Netflix Clone",
+          description:
+            "Developed a Netflix clone, emulating the features and user experience of the popular streaming platform to provide a seamless entertainment experience. Created an Amazon clone, mirroring the functionalities of the renowned e-commerce platform, enabling users to browse and shop.",
+          techUsed: "React.js, REST API",
+          github: "https://github.com/armaankhan8270/Netflix-Clone",
+          image: "./netfli1.png",
+        },
+        {
+          title: "Amazon Clone",
+          description:
+            "Developed a Netflix clone, emulating the features and user experience of the popular streaming platform to provide a seamless entertainment experience. Created an Amazon clone, mirroring the functionalities of the renowned e-commerce platform, enabling users to browse and shop.",
+          techUsed: "React.js, REST API",
+          github: "https://github.com/armaankhan8270/Amazon-Clone",
+          image: "./amzon4.png",
+        },
+        {
+          title: "Email Classifier Website",
+          description:
+            "A web application designed to classify emails into spam or not spam. Streamlit-based web interface for user interaction. Machine learning model for email classification. Input field for users to submit email content for classification. Classification result display indicating whether the email is spam or not spam.",
+          frontend: "Streamlit, Python",
+          machineLearning: "NumPy, Pandas, Matplotlib, Scikit-Learn",
+          github: "https://github.com/armaankhan8270/email-classifier",
+          image: "",
+        },
+        {
+          title: "Sentiment Analysis Website",
+          description:
+            "A website created for analyzing the sentiment of text data. Machine learning model for sentiment analysis of text data. Input field for users to input text for sentiment analysis. Output display indicating the sentiment (positive, negative, or neutral) of the provided text. This application utilizes machine learning techniques to perform sentiment analysis.",
+          frontend: "Streamlit, Python",
+          machineLearning: "NumPy, Pandas, Matplotlib, Scikit-Learn",
+          github: "https://github.com/armaankhan8270/",
+          image: "./sentiment1.png",
+        },
+        {
+          title: "Text Summarization and Keyword Extraction Website",
+          description:
+            "A web application designed to summarize text documents and extract key phrases or keywords from them. Text summarization algorithm employing machine learning or natural language processing techniques. Input field for users to paste or upload text documents. Output display showing the summarized version of the input text. Keyword extraction algorithm leveraging machine learning or natural language processing techniques.",
+          frontend: "Streamlit, Python",
+          machineLearning:
+            "NumPy, Pandas, Matplotlib, Scikit-Learn, NLTK, Spacy, TFIDF Algorithm",
+          github: "https://github.com/armaankhan8270/",
+          image: "./sentiment2.png",
+        },
+        {
+          title: "Book Summary App",
+          description:
+            "Mobile app for reading book summaries. Features: access summaries, search books, save favorites.",
+          frontend: "Flutter",
+          backend: "Custom API/Third-party API",
+          github: "https://github.com/armaankhan8270/",
+          image: "./book2.png",
+        },
+        {
+          title: "Weather App",
+          description:
+            "Mobile app for weather information. Features: current conditions, forecasts, alerts.",
+          frontend: "Flutter",
+          backend: "Weather API",
+          github: "https://github.com/armaankhan8270/WeatherApp",
+          image: "./dash4.png",
+        },
+        {
+          title: "Recipe App",
+          description:
+            "Mobile app for discovering recipes. Features: search, save favorites, create shopping lists.",
+          frontend: "Flutter",
+          backend: "Custom API/Third-party API",
+          github: "https://github.com/armaankhan8270/recipe-app",
+          image: "./book2.png",
+        },
+        {
+          title: "E-Vote System",
+          description:
+            "A secure and efficient online voting system using the MERN stack.",
+          frontend: "React.js",
+          backend: "Node.js, Express.js, MongoDB",
+          github: "https://github.com/armaankhan8270/SmartVotingSystem",
+          image: "./vote2.png",
+        },
+        {
+          title: "Carbon Emission Tracker",
+          description:
+            "A web application for tracking carbon emissions using the MERN stack.",
+          frontend: "React.js",
+          backend: "Node.js, Express.js, MongoDB",
+          github: "https://github.com/armaankhan8270/CarbonEmissonWeb",
+          image: "./carbon1.png",
+        },
+        {
+          title: "Music App",
+          description: "A music streaming application using the MERN stack.",
+          frontend: "React.js",
+          backend: "Node.js, Express.js, MongoDB",
+          github: "https://github.com/armaankhan8270/MusicPlayer",
+          image: "./music1.png",
+        },
+        {
+          title: "Dog and Cat Classifier",
+          description:
+            "A machine learning model using Convolutional Neural Networks (CNN) to classify images of dogs and cats.",
+          frontend: "Streamlit, Python",
+          machineLearning: "TensorFlow, Keras, NumPy, Pandas",
+          github: "https://github.com/armaankhan8270/dog-cat-classifier",
+          image: "./amzzon.png",
+        },
+        {
+          title: "Next Word Prediction",
+          description:
+            "A machine learning model using LSTM to predict the next word in a given sentence.",
+          frontend: "Streamlit, Python",
+          machineLearning: "TensorFlow, Keras, NumPy, Pandas",
+          github: "https://github.com/armaankhan8270/next-word-prediction",
+          image: "./Screenshot 2024-05-23 225249.png",
+        },
+        {
+          title: "Notes App",
+          description:
+            "A web application to create, edit, and manage notes using the MERN stack.",
+          frontend: "React.js",
+          backend: "Node.js, Express.js, MongoDB",
+          github: "https://github.com/armaankhan8270/notes-app",
+          image: "./attandance2.png",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const projectsGrid = document.getElementById("projects-grid");
+        projectsGrid.innerHTML = projects
+          .map(
+            (project) => `
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="${project.image}" alt="${
+              project.title
+            }" class="mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">${project.title}</h3>
+          <p class="text-gray-600 mb-2">${project.description}</p>
+          <p class="text-gray-600 mb-2">
+            <strong>Technologies Used:</strong>
+            ${project.frontend ? `Frontend: ${project.frontend} ` : ""}
+            ${project.backend ? `Backend: ${project.backend} ` : ""}
+            ${project.database ? `Database: ${project.database} ` : ""}
+            ${
+              project.machineLearning
+                ? `Machine Learning: ${project.machineLearning} `
+                : ""
+            }
+            ${project.techUsed ? `${project.techUsed} ` : ""}
+          </p>
+          <a href="${
+            project.github
+          }" class="text-green-600 hover:text-green-800">View on GitHub</a>
+        </div>
+      `
+          )
+          .join("");
+      });
+    </script>
+  </body>
+</html>

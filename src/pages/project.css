@@ -1,0 +1,48 @@
+/* Projects.css */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111827; /* Dark background color */
+    color: #e5e7eb; /* Light text color */
+  }
+  
+  h1 {
+    color: #e2e8f0; /* Lighter color for headings */
+    margin-bottom: 2rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  img {
+    transition: all 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+  }
+  
+  .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #111827, #1f2937, #111827);
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  }
+  

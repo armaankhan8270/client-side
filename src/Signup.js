@@ -20,7 +20,7 @@ const Signup = () => {
 
   return (
     <>
-      <div className="home text-black capitalize grid justify-center text-whie">
+      <div className="bg-slate-900 text-black capitalize grid justify-center text-whie">
         <div className="bg-black w-[450px] rounded h-[900px] mt-[91px] ">
           <div className=" w-[314px] capitalize  border-[#333333] rounded-lg h-[578px] m-[64px]">
             <h1 className="text-3xl text-white pt-1 h-9"> Sign In</h1>
